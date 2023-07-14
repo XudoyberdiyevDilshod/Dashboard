@@ -1,5 +1,8 @@
 import { Cards } from './Cards';
 import { Header } from './Header';
+import { Trands } from './Trands';
+import { TicketsAndTasks } from './TicketsAndTasks';
+import './Main.css';
 
 export const Main = () => {
 	const cards = [
@@ -22,9 +25,11 @@ export const Main = () => {
 	];
 
 	return (
-		<div>
+		<div className='component'>
 			<Header />
 			<Cards cards={cards} />
+			<Trands />
+			<TicketsAndTasks />
 		</div>
 	);
 };
